@@ -8,7 +8,7 @@ import ProductList from "../components/products";
 import FetchAllUsers from "../components/users";
 import { TextToBeToggled } from "../components/global-context-concept/text-to-toggle";
 import ButtonToggleText from "../components/global-context-concept/button";
-import { UseReducerExample } from "../components/useReducer-example/user-reducer-example";
+import { UseReducerExample } from "../components/useReducer-example/use-reducer-example";
 
 const dummyProductData = ["Product1", "Product2", "Product3"];
 
