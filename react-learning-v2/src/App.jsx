@@ -8,21 +8,23 @@ import { GreetingFunc } from "../components/GreetingFunc";
 
 function App() {
   const [count, setCount] = useState(0);
-  const meow = <h1> hello </h1>;
-  const isLoggedIn = true;
-  const messages = ["1", "2", "3", "4"];
-  const props = [
-    {
-      Name: "Sarthak",
-      Education: "Engineer",
-    },
-    {
-      Name: "Rohan",
-      Qualification: "Doctor",
-    },
-  ];
 
-  const hobbies = ["Dancing", "Coding", "Fitness"];
+  // const meow = <h1> hello </h1>;
+  // const isLoggedIn = true;
+  // const messages = ["1", "2", "3", "4"];
+
+  // const props = [
+  //   {
+  //     Name: "Sarthak",
+  //     Education: "Engineer",
+  //   },
+  //   {
+  //     Name: "Rohan",
+  //     Qualification: "Doctor",
+  //   },
+  // ];
+
+  // const hobbies = ["Dancing", "Coding", "Fitness"];
 
   const HandleHobbyClick = (hobby) => {
     alert(`You clicked ${hobby}`);
@@ -48,14 +50,22 @@ function App() {
       ) : (
         ""
       )} */}
-      <GreetingFunc />
-      <LearningProps
+
+      {/* <GreetingFunc /> */}
+
+      {/* <LearningProps
         prop={props}
         isMember={false}
         hobbies={hobbies}
         hobbyHandler={HandleHobbyClick}
         // This prop is passed, it will be used as a callback function with some event lets say Onclick event
-      />
+      /> */}
+
+      <div>
+        <p>{count}</p>
+        <button onClick={() => setCount((c) => c + 1)}>Increment</button>
+        <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
+      </div>
     </>
   );
 }
