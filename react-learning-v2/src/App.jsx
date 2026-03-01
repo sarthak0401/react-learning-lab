@@ -1,13 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 
 import { LearningProps } from "../components/LearningProps";
 
 import { Button } from "../components/Button";
 import { GreetingFunc } from "../components/GreetingFunc";
+import { Hook_UseEffect } from "../components/Hook_UseEffect";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   // const meow = <h1> hello </h1>;
   // const isLoggedIn = true;
@@ -61,11 +62,12 @@ function App() {
         // This prop is passed, it will be used as a callback function with some event lets say Onclick event
       /> */}
 
-      <div>
+      {/* <div>
         <p>{count}</p>
         <button onClick={() => setCount((c) => c + 1)}>Increment</button>
         <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
-      </div>
+      </div> */}
+      <Hook_UseEffect />
     </>
   );
 }
