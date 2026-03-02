@@ -17,6 +17,7 @@ import React, { useEffect, useState } from "react";
 
 export const Hook_UseEffect = () => {
   const [count, setCount] = useState(0);
+  const [val, setVal] = useState(0);
 
   const incrementCnt = () => {
     setCount(count + 1);
@@ -24,12 +25,15 @@ export const Hook_UseEffect = () => {
 
   useEffect(() => {
     document.title = `Count: ${count}`;
-  }, [count]);
+    console.log(`useEffect triggered`);
+  });
+  // Without dependency array it gets triggered on any sort of change in any component
 
   return (
     <div>
       <h1>Use Effect Hook</h1>
       <button onClick={incrementCnt}>Increment</button>
+      <button onClick={() => setVal(val + 1)}>Val btn</button>
     </div>
   );
 };

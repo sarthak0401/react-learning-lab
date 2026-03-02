@@ -6,6 +6,7 @@ import { LearningProps } from "../components/LearningProps";
 import { Button } from "../components/Button";
 import { GreetingFunc } from "../components/GreetingFunc";
 import { Hook_UseEffect } from "../components/Hook_UseEffect";
+import { MouseTrackerProject } from "../components/MouseTrackerProject";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -68,6 +69,8 @@ function App() {
         <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
       </div> */}
       <Hook_UseEffect />
+      <hr />
+      <MouseTrackerProject />
     </>
   );
 }
