@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.timerClock {
+  background-color: rgb(205, 206, 207);
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+}
+
+.clock {
+  font-size: 4rem;
+  font-family: sans-serif;
+  color: rgb(0, 145, 255);
+}

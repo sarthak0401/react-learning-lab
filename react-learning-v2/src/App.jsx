@@ -7,6 +7,10 @@ import { Button } from "../components/Button";
 import { GreetingFunc } from "../components/GreetingFunc";
 import { Hook_UseEffect } from "../components/Hook_UseEffect";
 import { MouseTrackerProject } from "../components/MouseTrackerProject";
+import { ParentComponent } from "../components/ParentComponent";
+import { TimerApp } from "../components/TimerApp";
+import { Hook_UseRef } from "../components/Hook_UseRef";
+import { Hook_UseRefEx2 } from "../components/Hook_UseRefEx2";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -68,9 +72,17 @@ function App() {
         <button onClick={() => setCount((c) => c + 1)}>Increment</button>
         <button onClick={() => setCount((c) => c - 1)}>Decrement</button>
       </div> */}
-      <Hook_UseEffect />
+      {/* <Hook_UseEffect />
       <hr />
-      <MouseTrackerProject />
+      <MouseTrackerProject /> */}
+
+      {/* <ParentComponent /> */}
+      {/* <div className="timerClock">
+        <TimerApp />
+      </div> */}
+
+      {/* <Hook_UseRef /> */}
+      <Hook_UseRefEx2 />
     </>
   );
 }

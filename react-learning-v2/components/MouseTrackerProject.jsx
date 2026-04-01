@@ -9,6 +9,10 @@ export const MouseTrackerProject = () => {
       setMousePosition({ x: event.clientX, y: event.clientY });
     };
     window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener;
+    };
   }, []);
 
   return (
