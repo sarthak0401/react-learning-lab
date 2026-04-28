@@ -11,6 +11,9 @@ import { ParentComponent } from "../components/ParentComponent";
 import { TimerApp } from "../components/TimerApp";
 import { Hook_UseRef } from "../components/Hook_UseRef";
 import { Hook_UseRefEx2 } from "../components/Hook_UseRefEx2";
+import { Prop_drilling } from "../components/Prop_drilling";
+import { Hook_UseContext } from "../components/Hook_UseContext";
+import { Custom_Hooks } from "../components/Custom_Hook_main";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -82,7 +85,13 @@ function App() {
       </div> */}
 
       {/* <Hook_UseRef /> */}
-      <Hook_UseRefEx2 />
+      {/* <Hook_UseRefEx2 /> */}
+
+      {/* <Prop_drilling /> */}
+
+      {/* <Hook_UseContext /> */}
+
+      <Custom_Hooks />
     </>
   );
 }
