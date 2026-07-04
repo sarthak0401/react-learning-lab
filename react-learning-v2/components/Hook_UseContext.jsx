@@ -8,7 +8,7 @@ import { createContext, useContext, useState } from "react";
 // const MyContext = createContext(defaultVal);
 
 // Consume a context:
-// const contextVal = useContext(myContext);
+// const contextVal = useContext(MyContext);
 
 // Provide the context :
 // <MyContext.provider value = {someVal} >
