@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import icon from "../assets/todo-icon.png";
 import TodoItems from "./TodoItems";
+import { DarkModeToggle } from "./DarkModeToggle";
 
 const Todos = () => {
   // const initialRef = useRef();
@@ -49,7 +50,8 @@ const Todos = () => {
   };
 
   return (
-    <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-125 rounded-2xl">
+    <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-125 rounded-2xl dark:bg-gray-900 dark:text-white">
+      <DarkModeToggle />
       {/* Title */}
       <div className="flex items-center mt-7 gap-3 justify-center">
         <img src={icon} alt="" className="w-10" />
@@ -64,7 +66,7 @@ const Todos = () => {
           value={text}
           type="text"
           placeholder="Add your task"
-          className="bg-transparent border-0 outline-none flex-1 h-11 pl-6 pr-2 placeholder:text-slate-600"
+          className="bg-transparent border-0 outline-none flex-1 h-11 pl-6 pr-2 placeholder:text-slate-600 dark:text"
         />
         <button
           className="border-none rounded-full bg-orange-400 w-32 h-11 text-white text-lg font-medium cursor-pointer"
